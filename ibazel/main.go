@@ -28,6 +28,8 @@ var Version = "Development"
 
 var overrideableStartupFlags []string = []string{
 	"--bazelrc",
+	"--output_user_root=",
+	"--output_base=",
 }
 
 var overrideableBazelFlags []string = []string{
@@ -58,8 +60,6 @@ var overrideableBazelFlags []string = []string{
 	"--test_arg=",
 	"--test_env=",
 	"--test_filter=",
-	"--output_user_root=",
-	"--output_base=",
 	"--profile=",
 	"--script_path=",
 	"--test_output=",
